@@ -5,33 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/root.css">
+
   <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<body class="w-screen h-screen flex items-center justify-center text-center bg-[var(--Pale-blue)] bg-[url('./images/pattern-background-mobile.svg')] bg-no-repeat bg-contain md:bg-[url('./images/pattern-background-desktop.svg')]">
+  <main class="w-96 rounded-2xl m-6 flex flex-col bg-white">
+    <img src="./images/illustration-hero.svg" alt="Imagem com o desenho de uma mulher escutando música em um fone de ouvido conectado ao celular, e dançando." class="rounded-t-xl">
+    <div class="flex flex-col m-6 sm:m-8">
+      <h1 class="text-[var(--Dark-blue)] font-black text-2xl mb-4">Order Summary</h1>
+    
+      <p class="text-[var(--Desaturated-blue)] font-normal text-sm">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+    
+      <div class="flex flex-row items-center justify-between my-6 p-2 rounded-xl bg-[var(--Very-pale-blue)]">
+        <div class="flex flex-row items-center justify-center">
+          <img src="./images/icon-music.svg" alt="Icone com uma nota musical no centro." class="mr-4">
+          <div class="flex flex-col">
+            <p class="text-[var(--Dark-blue)] font-bold text-sm">Annual Plan</p>
+            <p class="text-[var(--Desaturated-blue)] font-bold text-sm">$59.99/year</p>
+          </div>
+        </div>
+        <a href="" class="underline text-[var(--Bright-blue)] hover:no-underline hover:opacity-50">Change</a>
+      </div>
+      
+      <button class="p-3 mb-4 text-[var(--Very-pale-blue)] font-bold bg-[var(--Bright-blue)] rounded-xl hover:opacity-50">Proceed to Payment</button>
+      <a href="" class="no-underline text-[var(--Desaturated-blue)] hover:text-[var(--Dark-blue)] hover:font-bold">Cancel Order</a>
+    </div>
+  </main>
 </body>
 </html>
